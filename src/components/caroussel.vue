@@ -42,7 +42,6 @@ export default {
 .carousel-item{
     height: 45vh;
 }
-
 .section6{
     margin-bottom: 3em;
 }

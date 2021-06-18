@@ -4,20 +4,20 @@
         <h1>24 Carats Studio</h1>
       </main>
       <section class="section1 mw-100">
-        <p>24 Carats Studio est à la pointe de la technologie. Profitez d'une qualité optimale pour vos enregistrements, mixages, masterings, 
+        <p class="mt-4">24 Carats Studio est à la pointe de la technologie. Profitez d'une qualité optimale pour vos enregistrements, mixages, masterings, 
          sous les conseils avisés de nos professionnels.</p>
       </section>   
       <section class="section2">
       </section>
       <section class="section3">
-         <p>Découvrez nos différents studios que ce soit pour vous lâcher devant un micro, ou taper la pose devant un appareil photo.</p>
+         <p class="mt-4">Découvrez nos différents studios que ce soit pour vous lâcher devant un micro, ou taper la pose devant un appareil photo.</p>
       </section>
       <section class="section4">
          <div class="micro w-50"></div>
          <div class="photo w-50"></div>
       </section>
       <section class="section5">
-         <p> Découvrez nos artistes !</p>
+         <p class="mt-4"> Découvrez nos artistes !</p>
       </section>
       <caroussel/>
   </div>    
@@ -25,7 +25,6 @@
 
 
 <script>
-// @ is an alias to /src
 import caroussel from '../components/caroussel.vue'
 
 export default {
@@ -41,6 +40,8 @@ export default {
 <style scoped>
 .home{
    background:linear-gradient(#1e058b, #640c7a);
+   padding: 0;
+   margin: 0;
 }
   
 main {
@@ -53,20 +54,21 @@ h1 {
     font-family: 'Jura', sans-serif;
     font-weight: bold !important;
     padding-top: 2em !important;
-    font-size: 28px !important;
+    font-size: 35px !important;
     color: #ffffff;
     text-shadow: 0.06em 0.06em 0.03em rgb(48, 150, 218);
 }
 
 p {
-    color: rgb(230, 174, 34);
+    color: rgb(233, 161, 27);
     text-align: center;
     font-family: 'Jura', sans-serif;
     font-size: 1em !important;
 }
 
 .section1{
-    padding:7%;
+    padding:5%;
+    margin-bottom: 1em;
 }
 
 .section2 {
@@ -76,7 +78,7 @@ p {
 
 .section3 {
     text-align: center;
-    padding: 7%;
+    padding: 6%;
 }
 
 .section4 {
@@ -94,6 +96,6 @@ p {
 
 .section5 {
     text-align: center;
-    padding: 7%;
+    padding: 6%;
 }
 </style>

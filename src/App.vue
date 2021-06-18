@@ -9,19 +9,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav d-flex align-items-center">
         <li class="nav-item">
-           <router-link to="/" class="nav-link fs-5">Accueil</router-link>
+           <router-link to="/" class="nav-link fs-5" v-on:click="reload()">Accueil</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/about" class="nav-link fs-5">Studios</router-link>
+          <router-link to="/Studios" class="nav-link fs-5" v-on:click="reload()">Studios</router-link>
         </li>
         <li class="nav-item">
-           <router-link to="/about" class="nav-link fs-5">Tarifs</router-link>
+           <router-link to="/Tarifs" class="nav-link fs-5" v-on:click="reload()">Tarifs</router-link>
         </li>
         <li class="nav-item">
-           <router-link to="/about" class="nav-link fs-5">Label</router-link>
+           <router-link to="/Label" class="nav-link fs-5" v-on:click="reload()">Label</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/about" class="nav-link fs-5">Contact</router-link>
+          <router-link to="/Contacts" class="nav-link fs-5" v-on:click="reload()">Contacts</router-link>
         </li>
       </ul>
     </div>
@@ -42,10 +42,10 @@
               </ul>
         </div>
         <ul class="list-group list-group-flush w-100 d-flex flex-column flex-md-row justify-content-md-center ">
-          <li class="list-group-item mentions">Mentions légales</li>
-          <li class="list-group-item mentions">Conditions générales de vente</li>
-          <li class="list-group-item mentions">Plan du site</li>
-          <li class="list-group-item mentions">Recrutement</li>
+          <li class="list-group-item mentions fw-bold">Mentions légales</li>
+          <li class="list-group-item mentions fw-bold">Conditions générales de vente</li>
+          <li class="list-group-item mentions fw-bold">Plan du site</li>
+          <li class="list-group-item mentions fw-bold">Recrutement</li>
         </ul>
     </nav>
   </footer>
@@ -53,14 +53,16 @@
 
 
 <script>
-
+export default {
+  components:{
+  }
+}
 </script>
 
 
 
 
-<style scoped>
-
+<style>
 /*importation de la police google font 'jura' */
 @import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
 
@@ -87,9 +89,10 @@ header, .container-fluid{
     color: #fcac43 !important;
 }
 .btnmenu{
-    font-size: 20px !important;
-    border-radius:  0.3em !important;
-    background: linear-gradient(#ff9305, #f0c85c) !important;
+  margin-right: 1em;
+  font-size: 20px !important;
+  border-radius:  0.3em !important;
+  background: linear-gradient(#ff9305, #f0c85c) !important;
 }
 
 
@@ -98,12 +101,10 @@ header, .container-fluid{
 .bottom{
     background-color: black !important;
 }
-
 .réseau{
     background-color: black !important;
     color: white !important;
 }
-
 .mentions{
     background-color: black !important;
     color: goldenrod !important;

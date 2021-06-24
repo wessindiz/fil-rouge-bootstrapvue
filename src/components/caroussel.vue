@@ -1,5 +1,5 @@
 <template>
-<section class="6">
+<section class="section6">
   <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -42,8 +42,19 @@ export default {
 .carousel-item{
     height: 45vh;
 }
-.section6{
-    margin-bottom: 3em;
-}
 
+/* NOUVELLES RÈGLES POUR LE FORMAT TABLETTE (ENTRE 415PX ET 991.98PX)*/ 
+@media (min-width: 415px) and (max-width: 991.98px) {
+  .carousel-item{
+    height: 60vh;
+  }
+}
+  
+
+/* NOUVELLES RÈGLES POUR LE FORMAT DESKTOP (991.98PX)*/ 
+@media (min-width: 991.98px) {
+  .carousel-item{
+    height: 100vh;
+  }
+}
 </style>
